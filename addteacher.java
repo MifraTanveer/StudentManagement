@@ -9,7 +9,11 @@ import java.io.FileWriter;
 import java.awt.event.ActionEvent;
 // addteacher class extend swing 
 @SuppressWarnings("unused")
-public class Addteacher extends javax.swing.JFrame {
+interface teacher {
+
+void initComponents();
+}
+public class Addteacher extends javax.swing.JFrame implements teacher{
 
     /**
 	 * 
