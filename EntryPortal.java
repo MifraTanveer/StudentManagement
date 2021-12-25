@@ -8,17 +8,17 @@ import java.io.*;
 import java.util.*;
 
 
-@SuppressWarnings("unused")
+
 public class Entryportal extends javax.swing.JFrame {
 
     /**
 	 * 
 	 */
-	private static final long serialVersionUID = 7522526792628754248L;
+	
 	public Entryportal() {
         initComponents();
     }
-    @SuppressWarnings({ "rawtypes", "unchecked" })
+  
 	private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
@@ -122,8 +122,9 @@ public class Entryportal extends javax.swing.JFrame {
         pack();
     }
     
-    @SuppressWarnings("resource")
+    
 	private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
+		//exception handling
     	try {
     		String username = userid.getText();
         	String password = pwd.getText();
@@ -150,6 +151,7 @@ public class Entryportal extends javax.swing.JFrame {
                 else
                 if( mode.getSelectedItem()=="Teacher")
                 {
+		//Adding reference of class teacher	
                 Teacher1 f2 = new Teacher1(userid.getText());
                 f2.setVisible(true);
                 dispose();
@@ -174,7 +176,7 @@ public class Entryportal extends javax.swing.JFrame {
     	
     }
     private javax.swing.JTextField userid;
-    @SuppressWarnings("rawtypes")
+    
 	private javax.swing.JComboBox mode;
     private javax.swing.JButton loginb;
     private javax.swing.JButton cancelb;
