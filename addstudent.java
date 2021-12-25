@@ -5,11 +5,13 @@ import java.io.Writer;
 import java.awt.event.ActionEvent;
 
 
-@SuppressWarnings("unused")
 
+//abstractclass which extending student class
 abstract class STUDENT extends javax.swing.JFrame{
-abstract void initComponents();
+void initComponents(){
 
+
+}
 }
 //to add student and extend it to class STUDENT
 
@@ -22,8 +24,10 @@ public class Addstudent extends STUDENT /*javax.swing.JFrame*/ {
 	public Addstudent() {
         initComponents();
     }
-	public void initComponents() {
-
+//overriding the method	
+	 @Override
+        public void initComponents() {
+// adding labels textfields and buttons
         jLabel1 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
