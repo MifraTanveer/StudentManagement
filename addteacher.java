@@ -8,7 +8,7 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.awt.event.ActionEvent;
 // addteacher class extend swing 
-@SuppressWarnings("unused")
+//interface class teacher which add teacher is implementing
 interface teacher {
 
 void initComponents();
@@ -39,6 +39,7 @@ public class Addteacher extends javax.swing.JFrame implements teacher{
         jButton2.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {
         		try{    
+		// file added		
      	           String f ="src\\users.txt";
      	           BufferedWriter output = new BufferedWriter(new FileWriter(f, true));
      	           output.newLine();
