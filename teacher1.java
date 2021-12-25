@@ -8,27 +8,29 @@ import java.io.FileReader;
 import java.awt.event.ActionEvent;
 
 
-@SuppressWarnings("unused")
+
 public class Teacher1 extends javax.swing.JFrame {
     /**
 	 * 
 	 */
-	private static final long serialVersionUID = -5925756146593045815L;
+
 
 	public Teacher1(String s) {
     	initComponents(s);
     }
     String iddd = null;
-    @SuppressWarnings({ "rawtypes", "unchecked" })
+ 
 	private void initComponents(String s) {
     	String name = s;
         jLabel1 = new javax.swing.JLabel();
         sub = new javax.swing.JComboBox();
+		// combo box to select different subject
         sub.setModel(new DefaultComboBoxModel(new String[] {"Maths", "Physics", "Chemistry"}));
         jLabel2 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton1.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent arg0) {
+			// using reference of class takeattendence
         		Takeattendence t = new Takeattendence((String) sub.getSelectedItem());
         		t.setVisible(true);
         		dispose();
@@ -37,6 +39,7 @@ public class Teacher1 extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jButton2.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {
+			// using reference of report class
         		Report t = new Report((String) sub.getSelectedItem());
         		t.setVisible(true);
         		dispose();
@@ -46,7 +49,7 @@ public class Teacher1 extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); 
-        jLabel1.setText("WELCOME "+name);
+        jLabel1.setText("\t \t  \t \t  \t \t \t \t \t WELCOME ");
 
         sub.setEditable(true);
 
@@ -100,7 +103,7 @@ public class Teacher1 extends javax.swing.JFrame {
     }
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    @SuppressWarnings("rawtypes")
+
 	private javax.swing.JComboBox sub;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
