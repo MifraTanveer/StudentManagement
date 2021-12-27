@@ -9,7 +9,7 @@ public class admin extends javax.swing.JFrame {
     /**
 	 * 
 	 */
-	private static final long serialVersionUID = -3512208543479059817L;
+	
 	
     public admin(String s) {
         initComponents(s);
