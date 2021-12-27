@@ -6,13 +6,12 @@ import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
-@SuppressWarnings("unused")
 public class Report extends javax.swing.JFrame {
 
     /**
 	 * 
 	 */
-	private static final long serialVersionUID = 3502024109032056383L;
+
 	public Report(String k) {
         initComponents(k);
     }
