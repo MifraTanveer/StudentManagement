@@ -14,13 +14,13 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-@SuppressWarnings("unused")
+
 public class Takeattendence extends javax.swing.JFrame {
 
     /**
 	 * 
 	 */
-	private static final long serialVersionUID = 3502024109032056383L;
+	
 	public Takeattendence(String k) {
         initComponents(k);
     }
